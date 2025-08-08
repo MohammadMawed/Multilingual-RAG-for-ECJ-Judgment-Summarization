@@ -15,33 +15,31 @@ The baseline system applies a standard retrieval-augmented generation method usi
 ### 2. SCaLAR-Inspired Hierarchical RAG
 
 This system follows a three-stage architecture inspired by hierarchical summarization techniques. It includes:
-- Micro-level summarization of chunks
-- Global summary synthesis from micro-summaries
+
+- Micro-level summarization of chunks  
+- Global summary synthesis from micro-summaries  
 - Final re-ranking using semantic similarity (Legal-BERT)
 
 - Notebook: `scalar_multilingual_rag_ecj.ipynb`
 
-Evaluation
-The notebooks include integrated evaluation using:
+## Evaluation
 
-ROUGE-1, ROUGE-2, ROUGE-L for lexical overlap
+The notebooks include integrated evaluation using the following metrics:
 
-BERTScore (F1) for semantic similarity
+- **ROUGE-1**, **ROUGE-2**, **ROUGE-L**: to measure lexical overlap  
+- **BERTScore (F1)**: to assess semantic similarity
 
 Both systems are tested on a sample of ECJ decisions with available reference summaries.
 
-Usage
+## Usage
+
 Each notebook is self-contained. To run:
 
-Open the notebook in Jupyter or VS Code.
+1. Open the notebook in Jupyter or VS Code.  
+2. Follow the execution order (sections are labeled).  
+3. Adjust paths to document files, models, or output directories as needed.  
+4. Run the final evaluation cells to view the results.
 
-Follow the execution order (each section is labeled).
+## Project Context
 
-Adjust paths to the document files, models, or output directories as needed.
-
-Run the final evaluation cells to view metric outputs.
-
-Project Context
-
-This repository was created as part of the Project Seminar Data Science and Artificial Intelligence 2025 to support multilingual summarization research for ECJ legal texts. The project was developed under the supervision of Bianca STEFFES.
-
+This repository was created as part of the **Project Seminar Data Science and Artificial Intelligence 2025** to support multilingual summarization research for ECJ legal texts. The project was developed under the supervision of **Bianca STEFFES**.
